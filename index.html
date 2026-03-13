@@ -29,6 +29,16 @@
     ul { padding-left: 1.2rem; }
   </style>
 </head>
+<script>
+  const user = "iam" + "agile";
+  const domain = "codedon" + ".ninja";
+
+  const email = user + "@" + domain;
+
+  const link = document.getElementById("emailLink");
+  link.href = "mailto:" + email;
+  link.textContent = email;
+</script>
 <body>
   <div class="container">
     <h1>Don</h1>
@@ -48,7 +58,7 @@
     </ul>
 
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:iamagile@codedon.ninja">iamagile@codedon.ninja</a></p>
+    <p>Email: <a id="emailLink"></a></p>    
     <p>GitHub: <a href="https://github.com/dc-lmtd">github.com/dc-lmtd</a></p>
   </div>
 </body>
